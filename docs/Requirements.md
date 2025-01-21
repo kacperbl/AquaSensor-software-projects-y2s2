@@ -21,14 +21,14 @@ Water quality is a critical issue in many communities, and it is essential to mo
 
 | ID    | Theme         | Description                                                                               | Priority (MoSCoW) |
 | ----- | ------------- | ----------------------------------------------------------------------------------------- | ----------------- |
-| FR002 | Integration   | The system must integrate data streams using APIs and the MQTT protocol                   | Must              |
-| FR003 | Visualization | The system must provide intuitive visualizations for dissolved oxygen and other metrics   | Must              |
-| FR004 | Visualization | The system should show both location-based and parameter-based data changes               | Should            |
-| FR006 | External Data | The system should integrate open-source geospatial and hydrological data                  | Should            |
-| FR007 | Correlation   | The system should develop tools to correlate data                                         | Should            |
-| FR008 | Application   | The system must include a user-friendly web application                                   | Must              |
-| FR009 | Application   | The application should support real-time and historical data interaction                  | Should            |
-| FR010 | Accessibility | The application must cater to a wide range of users, from ecologists to community members | Must              |
+| FR001 | Integration   | The system must integrate data streams using APIs and the MQTT protocol                   | Must              |
+| FR002 | Visualization | The system must provide intuitive visualizations for dissolved oxygen and other metrics   | Must              |
+| FR003 | Visualization | The system should show both location-based and parameter-based data changes               | Should            |
+| FR004 | External Data | The system should integrate open-source geospatial and hydrological data                  | Should            |
+| FR005 | Correlation   | The system should develop tools to correlate data                                         | Should            |
+| FR006 | Application   | The system must include a user-friendly web application                                   | Must              |
+| FR007 | Application   | The application should support real-time and historical data interaction                  | Should            |
+| FR008 | Accessibility | The application must cater to a wide range of users, from ecologists to community members | Must              |
 
 ## Non Functional Requirements
 
