@@ -1,8 +1,16 @@
 # User Stories
 
-| ID  | Stakeholder | Description                                                              | Acceptance Criteria                                   |
-| --- | ----------- | ------------------------------------------------------------------------ | ----------------------------------------------------- |
-| US1 | User        | As a user, I want to be able to see the current temperature of the river | I can see the temperature                             |
-| US2 | User        | As a user, I want to be able to see historical temperatures of the river | I can see the temperature                             |
-| US3 | User        | As a user, I want to be able get alerts if the water quality is bad      | user gets notifications when the water quality is bad |
-| US4 | User        | As a user, I want to be able to save my location as a default value      | I can set a home location                             |
+| ID   | Stakeholder | Description                                                                                                                         | Acceptance Criteria                                                                       |
+| ---- | ----------- | ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| US1  | User        | As a user, I want to be able to see the current temperature of the river                                                            | I can see the temperature                                                                 |
+| US2  | User        | As a user, I want to be able to see historical temperatures of the river                                                            | I can see the temperature                                                                 |
+| US3  | User        | As a user, I want to be able get alerts if the water quality is bad                                                                 | user gets notifications when the water quality is bad                                     |
+| US4  | User        | As a user, I want to be able to save my location as a default value                                                                 | I can set a home location                                                                 |
+| US5  | User        | As a user, I want to be able to view the current water level of the river                                                           | I can see the current water level                                                         |
+| US6  | User        | As a user, I want to be able to view the forecasted water levels for the next 24 hours                                              | I can see the forecasted water levels for the next 24 hours                               |
+| US7  | User        | As a user, I want to be able to filter water quality data by parameter (e.g. pH, turbidity, etc.)                                   | I can filter water quality data by parameter                                              |
+| US8  | User        | As a user, I want to be able to compare the current water quality to historical data                                                | I can compare current water quality to historical data                                    |
+| US9  | User        | As a user, I want to be able to report any issues or observations with the water quality                                            | I can submit a report of any issues or observations                                       |
+| US10 | User        | As a user, I want to be able to view information on nearby waterways and their conditions                                           | I can view information on nearby waterways and their conditions                           |
+| US11 | User        | As a user, I want to be able to receive notifications when there are planned events or activities that may affect the water quality | I receive notifications of planned events or activities that may affect the water quality |
+| US12 | User        | As a user, I want to be able to customize the units of measurement for the water level and temperature                              | I can customize the units of measurement                                                  |
