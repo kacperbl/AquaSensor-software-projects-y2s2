@@ -11,7 +11,7 @@ Water quality is a critical issue in many communities, and it is essential to mo
 ## Project Objectives
 
 - view water quality over time
-- visualise the data in the style of a river
+- visualize the data in the style of a river
 - see current water quality at a glance
 - interact with the data in an intuitive and visual way
 
