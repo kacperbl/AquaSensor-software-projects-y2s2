@@ -11,22 +11,21 @@ class HealthCheckResponse(BaseModel):
 class SensorStatus(BaseModel):
     """Model representing the current status of a sensor."""
 
-    ID: Annotated[str, Field(description="Unique sensor identifier.")]
-    Name: Annotated[str, Field(description="Name or location of the sensor.")]
-    Date_Time: Annotated[str, Field(description="Timestamp of the latest reading in format DD/MM/YY HH:MM.")]
-    Temperature: Annotated[str, Field(description="Temperature recorded by the sensor (e.g., '5.12C').")]
-    mg_L: Annotated[str, Field(description="Dissolved oxygen level in mg/L.")]
-    percent: Annotated[str, Field(description="Dissolved oxygen percentage relative to standard saturation.")]
+    id: Annotated[str, Field(description="Unique sensor identifier.")]
+    name: Annotated[str, Field(description="Name or location of the sensor.")]
+    datetime: Annotated[datetime, Field(description="Timestamp of the latest reading (ISO 8601).")]
+    temperature: Annotated[str, Field(description="Temperature recorded by the sensor (e.g., '5.12C').")]
+    dissolved_oxygen: Annotated[float, Field(description="Dissolved oxygen level in mg/L.")]
+    dissolved_oxygen_percent: Annotated[float, Field(description="Dissolved oxygen percentage relative to standard saturation.")]
 
 
 class SensorReadings(BaseModel):
     """Model representing a single sensor reading entry."""
 
-    date: Annotated[str, Field(description="Date of the reading in format DD-MM-YY.")]
-    time: Annotated[str, Field(description="Time of the reading in format HH:MM:SS.")]
+    datetime: Annotated[datetime, Field(description="Date and time of the reading (ISO 8601).")]
     temperature: Annotated[float, Field(description="Temperature value recorded in Celsius.")]
-    mg_L: Annotated[float, Field(description="Dissolved oxygen level in mg/L.")]
-    percent: Annotated[float, Field(description="Dissolved oxygen saturation percentage.")]
+    dissolved_oxygen: Annotated[float, Field(description="Dissolved oxygen level in mg/L.")]
+    dissolved_oxygen_percent: Annotated[float, Field(description="Dissolved oxygen saturation percentage.")]
 
 
 class SensorStatusResponse(BaseModel):
