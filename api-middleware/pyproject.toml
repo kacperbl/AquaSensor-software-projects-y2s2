@@ -1,24 +1,17 @@
 [project]
-name = "aquasensor-backend"
+name = "api-middleware"
 version = "0.1.0"
-description = "Add your description here"
+description = "Convert aquasensor API into modern json rest API"
 readme = "README.md"
 authors = [
     { name = "TerminalMan", email = "84923604+SecretiveShell@users.noreply.github.com" }
 ]
 requires-python = ">=3.10"
-dependencies = [
-    "fastapi>=0.115.7",
-    "pydantic>=2.10.6",
-    "uvicorn>=0.34.0",
-]
+dependencies = []
 
 [project.scripts]
-aquasensor-backend = "aquasensor_backend:main"
+api-middleware = "api_middleware:main"
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
-
-[tool.uv.workspace]
-members = ["api-middleware"]
