@@ -30,7 +30,7 @@ async def get_sensor_readings_by_id(sensorid: str, request: SensorReadingsReques
     """Get sensor readings by ID."""
 
 @app.get("/sensors/{sensorid}/readings/latest", dependencies=[auth_required]) 
-async def get_sensor_readings_latest_by_id(sensorid: str) -> SensorReadingsResponse:
+async def get_sensor_readings_latest_by_id(sensorid: str) -> SensorStatus:
     """Get latest sensor readings by ID."""
 
     return await get_status_by_id(sensorid)
