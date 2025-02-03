@@ -1,3 +1,4 @@
+from fastapi import HTTPException
 from httpx import AsyncClient as Client
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse, urlencode, urlunparse
@@ -11,7 +12,7 @@ TOKEN = getenv("AQUASENSOR_TOKEN")
 assert USERNAME, "AQUASENSOR_USERNAME environment variable is not set."
 assert TOKEN, "AQUASENSOR_TOKEN environment variable is not set."
 
-async def get_status() :
+async def get_status() -> dict:
     url = urlparse(BASE_URL)
     params = urlencode({"op": "status", "username": USERNAME, "token": TOKEN})
     url = url.geturl() + f"?{params}"
@@ -49,3 +50,13 @@ async def get_status() :
     return {
         "sensors": parsed_data
     }
+
+
+async def get_status_by_id(sensorid: str) -> dict:
+    status = await get_status()
+    sensors = status["sensors"]
+    for sensor in sensors:
+        if sensor["id"] == sensorid:
+            return sensor
+        
+    raise HTTPException(status_code=404, detail="Sensor not found")
